@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/duyaans/static/css/main.31d6cfe0.css",
+    "main.js": "/duyaans/static/js/main.da8012fd.js",
+    "index.html": "/duyaans/index.html",
+    "main.da8012fd.js.map": "/duyaans/static/js/main.da8012fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.da8012fd.js"
+  ]
+}
