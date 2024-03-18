@@ -58,7 +58,7 @@ function Header(props) {
     <StyledHeader>
       <StyledNav>
         <div>
-          <NavImg onClick={() => window.location.replace('/')} />
+          <NavImg onClick={() => window.location.replace('/duyaans/')} />
         </div>
         <NavRight>
           <NavUl>
