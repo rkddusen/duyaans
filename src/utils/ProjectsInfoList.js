@@ -7,15 +7,12 @@ export const ProjectsInfoList = [
     projectSize: "4인 프로젝트",
     role: "내 역할 : 팀장, 프론트엔드 담당(메인, 모집/제휴, etc, 심리테스트/이상형월드컵/능력고사 페이지), AWS 배포 및 관리",
     skill: [
-      "JavaScript, React, Styled-components, react-router, react-query",
-      "Node.js, Express, MySQL",
-      "Figma, GitHub",
-      "AWS EC2, AWS RDS",
+      "JavaScript", "React", "React-router", "Axios", "Styled-components"
     ],
     info: [
-      "교내 오케스트라 동아리 단원 4명이 자발적으로 시작한 프로젝트입니다.",
-      "웹사이트를 배포하여 사용자 평가를 통해 개선점을 찾아 리팩토링을 진행했고, 현재는 리팩토링과 유지보수를 목표로 하여 프로젝트를 계속 진행하고 있습니다.",
-      "리팩토링을 진행하며 리액트를 새로 도입했습니다. 이를 통해 컴포넌트화의 재사용성이 주는 장점을 직접 겪었습니다.",
+      "교내 오케스트라 동아리 웹사이트를 제작하는 프로젝트입니다.",
+      "동아리에 소속감을 느껴 동아리 단원 4명을 모아 자발적으로 진행했습니다.",
+      "웹사이트를 배포한 후, 사용자들을 대상으로 설문을 진행하고 특정 사용자를 대상으로 실제 웹 사이트에서의 경험을 분석하여 사용자 평가를 진행했습니다. 이를 바탕으로 현재는 리팩토링과 유지보수를 목표로 하여 프로젝트를 계속 진행하고 있습니다.",
     ],
     goal: [
       "‘동아리 홍보’, ‘졸업생과의 교류’, ‘사용자들을 위한 즐길거리’ 제공",
@@ -40,6 +37,28 @@ export const ProjectsInfoList = [
     ],
   },
   {
+    title: `Color, me\n크롬 익스텐션`,
+    img: "./images/colorme(2).png",
+    link: "https://chromewebstore.google.com/detail/color-me/ldcmnbbjcbciolddfffpfghlcgnogacp?hl=ko&utm_source=ext_sidebar",
+    git: "https://github.com/rkddusen/ColorMe",
+    projectSize: "개인 프로젝트",
+    skill: [
+      "JavaScript", "Github"
+    ],
+    info: [
+      "원하는 색상 조합을 웹에 저장할 수 있는 웹서비스를 제작하는 프로젝트입니다.",
+      "Github Pages로 배포했지만, 크롬 익스텐션 프로그램으로 생성하면 좋은 경험이 될 것이라 생각했습니다. 이에 version 2를 만들어 크롬 익스텐션을 통해 배포했습니다.",
+    ],
+    goal: [
+      "원하는 색상을 골라서 조합한 후, 저장하는 기능 제공",
+    ],
+    feature: [
+      '색상 선택 및 색상 배열 조정',
+      '선택한 색상 조합 저장',
+      '저장된 조합 편집 및 삭제',
+    ],
+  },
+  {
     title: "요리조리",
     img: "./images/yorizori.png",
     link: "http://15.165.105.159",
@@ -47,15 +66,11 @@ export const ProjectsInfoList = [
     projectSize: "4인 프로젝트",
     role: "내 역할 : (공통)기획, 설계, 테스트, (개인)디자인 및 프론트엔드 담당",
     skill: [
-      "JavaScript, React, Styled-components, react-router",
-      "Spring, MySQL",
-      "Figma, GitHub",
-      "AWS EC2, AWS RDS",
+      "JavaScript", "React", "React-router", "Axios", "Styled-components"
     ],
     info: [
-      "대학교 졸업 프로젝트로 진행했습니다.",
-      "레시피를 관리할 수 있는 웹사이트입니다.", 
-      "기획, 요구사항 분석, 설계, 구현, 테스트의 전 과정을 직접 경험했습니다."
+      "레시피를 관리할 수 있는 웹사이트입니다. 레시피를 생성하고, 편집하고 삭제하는 것이 기본적으로 가능하며, 사용자 맞춤 추천 기능을 지원합니다.", 
+      "기획, 요구사항 분석, 설계, 구현, 테스트의 전 과정을 직접 수행하여 하나의 애플리케이션이 개발되는 과정을 경험했습니다."
     ],
     goal: [
       "조회, 검색, 등록, 추천 기능을 통해 사용자는 레시피에 대한 정보를 얻고, 타인과 그 정보를 공유 및 평가할 수 있도록 힘",
@@ -70,28 +85,6 @@ export const ProjectsInfoList = [
       '여러 방식의 레시피 검색',
       '사용자 간 주도적인 레시피 공유등록',
       '주변 식당 위치 정보 제공',
-    ],
-  },
-  {
-    title: `Color, me\n크롬 익스텐션`,
-    img: "./images/colorme(2).png",
-    link: "https://chromewebstore.google.com/detail/color-me/ldcmnbbjcbciolddfffpfghlcgnogacp?hl=ko&utm_source=ext_sidebar",
-    git: "https://github.com/rkddusen/ColorMe",
-    projectSize: "개인 프로젝트",
-    skill: [
-      "JavaScript",
-    ],
-    info: [
-      "원하는 색상 조합을 웹에 저장하는 크롬 익스텐션 프로그램입니다.",
-      "색상 조합을 저장하는 웹서비스를 제작하고 싶어서 Github Pages를 통해 배포했습니다. 그러던 중 크롬 익스텐션에 대해 알게 됐고, 마침 적합하다고 생각해서 크롬 익스텐션으로 리팩토링하게 됐습니다.",
-    ],
-    goal: [
-      "원하는 색상을 골라서 조합한 후, 저장하는 기능 제공",
-    ],
-    feature: [
-      '색상 선택 및 색상 배열 조정',
-      '선택한 색상 조합 저장',
-      '저장된 조합 편집 및 삭제',
     ],
   },
 ];
