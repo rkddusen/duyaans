@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components';
 
 const IntersectionObserver = ({ children }) => {
   const [ref, inView] = useInView({
-    threshold: 0.3, // 50% of component visible
+    threshold: 0.2, // 20% of component visible
   });
 
   const [animated, setAnimated] = useState(false);
