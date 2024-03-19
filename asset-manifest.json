@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/duyaans/static/css/main.31d6cfe0.css",
-    "main.js": "/duyaans/static/js/main.96c192fd.js",
+    "main.js": "/duyaans/static/js/main.dc4e0bd8.js",
     "index.html": "/duyaans/index.html",
-    "main.96c192fd.js.map": "/duyaans/static/js/main.96c192fd.js.map"
+    "main.dc4e0bd8.js.map": "/duyaans/static/js/main.dc4e0bd8.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.96c192fd.js"
+    "static/js/main.dc4e0bd8.js"
   ]
 }
