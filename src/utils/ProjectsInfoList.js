@@ -7,7 +7,13 @@ export const ProjectsInfoList = [
     projectSize: "4인 프로젝트",
     role: "내 역할 : 팀장, 프론트엔드 담당(메인, 모집/제휴, etc, 심리테스트/이상형월드컵/능력고사 페이지), AWS 배포 및 관리",
     skill: [
-      "JavaScript", "React", "React-router", "Axios", "Styled-components"
+      ["JavaScript"],
+      ["JavaScript", "React", "React-router", "Axios", "Styled-components"]
+    ],
+    skillReason: [
+      "리액트는 자바스크립트 위에서 구축된 라이브러리이기 때문에, 자바스크립트의 기본 개념과 문법을 강화시키기 위해 리액트를 사용하지 않고 웹 사이트를 제작했습니다.",
+      "리팩토링을 진행하면서 리액트를 사용하게 됐고, 컴포넌트화를 통해 재사용성이 유용하고, 강력한 커뮤니티를 통해 쉽게 접근할 수 있는 장점을 경험했습니다.",
+      "Styled-components는 리액트의 컴포넌트 기반 아키텍쳐를 따르기 때문에 리액트와 같은 위치에서 스타일을 관리할 수 있습니다. 또한, 리액트의 props를 사용하여 스타일링하는 것이 용이했기에 상태에 따라 스타일을 쉽게 변경할 수 있습니다.",
     ],
     info: [
       "교내 오케스트라 동아리 웹사이트를 제작하는 프로젝트입니다.",
@@ -43,11 +49,11 @@ export const ProjectsInfoList = [
     git: "https://github.com/rkddusen/ColorMe",
     projectSize: "개인 프로젝트",
     skill: [
-      "JavaScript", "Github"
+      ["JavaScript", "Github"]
     ],
     info: [
       "원하는 색상 조합을 웹에 저장할 수 있는 웹서비스를 제작하는 프로젝트입니다.",
-      "Github Pages로 배포했지만, 크롬 익스텐션 프로그램으로 생성하면 좋은 경험이 될 것이라 생각했습니다. 이에 version 2를 만들어 크롬 익스텐션을 통해 배포했습니다.",
+      "Github Pages로 배포했지만, 크롬 익스텐션 프로그램으로 생성하면 좋은 경험이 될 것이라 생각했습니다. 이에 새로운 디자인으로 크롬 익스텐션을 통해 배포했습니다.",
     ],
     goal: [
       "원하는 색상을 골라서 조합한 후, 저장하는 기능 제공",
@@ -66,7 +72,11 @@ export const ProjectsInfoList = [
     projectSize: "4인 프로젝트",
     role: "내 역할 : (공통)기획, 설계, 테스트, (개인)디자인 및 프론트엔드 담당",
     skill: [
-      "JavaScript", "React", "React-router", "Axios", "Styled-components"
+      ["JavaScript", "React", "React-router", "Axios", "Styled-components"]
+    ],
+    skillReason: [
+      "혼자서 디자인과 프론트엔드를 다뤄야 했고, 기간이 주어진 프로젝트이기에 리액트 개발과 비슷한 방식인 컴포넌트를 기반으로 하는 스타일링으로 환경적 부담을 줄였습니다.",
+      "텍스트 에디터가 필요한 기능은 우선 순위가 낮았습니다. 가장 기본적인 글 입력과 사진 등록만을 필요로 했습니다. 그러기에 상대적으로 파일 크기가 큰 toast ui나 학습 곡선이 높은 draft.js보다 경량이 낮은 quill 에디터를 선택했습니다.",
     ],
     info: [
       "레시피를 관리할 수 있는 웹사이트입니다. 레시피를 생성하고, 편집하고 삭제하는 것이 기본적으로 가능하며, 사용자 맞춤 추천 기능을 지원합니다.", 

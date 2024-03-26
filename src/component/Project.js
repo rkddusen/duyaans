@@ -43,12 +43,39 @@ function Project(props) {
       <ProjectExplain>
         <ExplainBold>{ProjectsInfoList[index]?.projectSize}</ExplainBold>
         <div>{ProjectsInfoList[index]?.role}</div>
-        <ExplainBold>사용 기술</ExplainBold>
+        <ExplainBold>주요 사용 기술</ExplainBold>
         <div>
-          {ProjectsInfoList[index]?.skill.map((v, i) => (
-            <ExplainList key={i}>{v}</ExplainList>
-          ))}
+          {ProjectsInfoList[index]?.skill.length > 1 ? (
+            <>
+              {ProjectsInfoList[index]?.skill.map((v, i) => (
+                <>
+                  <ExplainSkillVersion>version {i+1}</ExplainSkillVersion>
+                  {v.map((v, i) => (
+                    <ExplainList key={i}>{v}</ExplainList>
+                  ))}
+                </>
+              ))}
+            </>
+          ) : (
+            <>
+              {ProjectsInfoList[index]?.skill[0].map((v, i) => (
+                <ExplainList key={i}>{v}</ExplainList>
+              ))}
+            </>
+          )}
         </div>
+        {ProjectsInfoList[index]?.skillReason ? (
+          <>
+            <ExplainBold>사용 기술 이유</ExplainBold>
+            <div>
+              {ProjectsInfoList[index]?.skillReason.map((v, i) => (
+                <ExplainList key={i}>{v}</ExplainList>
+              ))}
+            </div>
+          </>
+        ) : (
+          null
+        )}
         <ExplainBold>프로젝트 소개</ExplainBold>
         <div>
           {ProjectsInfoList[index]?.info.map((v, i) => (
@@ -171,7 +198,9 @@ const ExplainList = styled.p`
   &::before{
     content: "-";
     margin: 0 5px;
+    margin-left: -10px;
   }
+  padding: 0 10px;
 `;
 const ExplainProblem = styled.div`
   margin-bottom: 20px;
@@ -180,6 +209,9 @@ const ExplainProblemBold = styled.p`
   font-weight: bold;
   margin-bottom: 5px;
   margin-top: 10px;
+`;
+const ExplainSkillVersion = styled.p`
+  margin-top: 5px;
 `;
 
 export default Project;
