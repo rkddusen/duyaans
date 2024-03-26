@@ -198,7 +198,9 @@ const ExplainList = styled.p`
   &::before{
     content: "-";
     margin: 0 5px;
+    margin-left: -10px;
   }
+  padding: 0 10px;
 `;
 const ExplainProblem = styled.div`
   margin-bottom: 20px;
